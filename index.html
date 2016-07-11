@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>jo</title>
+<link href="css/zhu.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var intervalId = null; 
+function slideAd(id,nStayTime,sState,nMaxHth,nMinHth){ 
+  this.stayTime=nStayTime*1000 || 3000; 
+  this.maxHeigth=nMaxHth || 200; 
+  this.minHeigth=nMinHth || 0; 
+  this.state=sState || "down" ; 
+  var obj = document.getElementById(id); 
+  if(intervalId != null)window.clearInterval(intervalId); 
+  function openBox(){ 
+   var h = obj.offsetHeight; 
+   obj.style.height = ((this.state == "down") ? (h + 2) : (h - 2))+"px"; 
+    if(obj.offsetHeight>this.maxHeigth){ 
+    window.clearInterval(intervalId); 
+    intervalId=window.setInterval(closeBox,this.stayTime); 
+    } 
+    if (obj.offsetHeight<this.minHeigth){ 
+    window.clearInterval(intervalId); 
+    obj.style.display="none"; 
+    } 
+  } 
+  function closeBox(){ 
+   slideAd(id,this.stayTime,"up",nMaxHth,nMinHth); 
+  } 
+  intervalId = window.setInterval(openBox,10); 
+} 
+	 
+function handle(delta) {
+	if (delta < 0)
+	{
+		document.getElementById("kuang").style.display="";
+		
+	}
+	else
+		display(head);
+	
+}
+
+function wheel(event){
+	var delta = 0;
+	if (!event) event = window.event;
+	if (event.wheelDelta) {
+		delta = event.wheelDelta/120; 
+	} else if (event.detail) {
+		delta = -event.detail/3;
+	}
+	if (delta)
+		handle(delta);
+}
+
+/* Initialization code. */
+if (window.addEventListener)
+	window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+</script>
+</head>
+<body>
+<div id="content">
+	<div id="kuang" style="display:none;">
+        <div id="right-top">
+       		 email:liujiaV_V@163.com
+      	</div>
+      	<div id="left-top">
+        	<a href="#">github</a>
+     	 </div>
+        <div id="left-bottom">
+       	 	<img src="img/zuo.png" width="27" height="156" >
+        </div>
+      	<div id="right-bottom">
+        	<a href="#"><img src="img/you.png"></a>
+        </div>
+        <div id="top">
+        	<img src="img/me.png" width="80" height="40">
+        </div>
+      </div>
+	<div id="head" style="height: 200px;overflow:hidden;">
+		<ul>
+        <li class="me"><img src="img/me.png"></li>
+        <div class="connect">
+        	<li><a href="#"><img src="img/email.png" width="50" height="50"> </a></li>
+        	<li><a href="#"><img src="img/git.png" width="50" height="50"></a> </li>
+         </div>
+       	</ul>
+      
+
+	</div>
+    <div id="nav">
+    <canvas id="myCanvas" width="200px" height="100px">   
+	您的浏览器不支持canvas标签。   
+	</canvas> 	
+    <span class="biaoti">W E B</span>
+    
+        <ul class="nav-s">
+        
+        <li><a href="#">all</a></li>
+        <li><a href="#">web</a></li>
+        <li><a href="#">gallery</a></li>
+        </ul>
+    </div>
+    <div id="example">   	
+        <div id="example-show">
+        
+        	<div class="example-link"><a href="#"><img src="img/example-two.jpg" width="1000" height="400"> </a><a href="#">see more</a></div>
+        	<a href="#"><span>travel website </span></a>
+        
+        </div>
+        <div id="example-show">
+        <div class="example-link"><a href="#"><img src="img/example-one.jpg" width="1000" height="400"> </a><a href="#">see more</a></div>
+        <a href="#"><span>food website </span></a>
+        </div>
+    </div>
+    <div id="footer">
+                                Copyright (C) 2016 jo
+    </div>
+</div>
+<script type="text/javascript"> 
+ <!-- 
+ slideAd('head',2); 
+--> 
+</script>
+<script type="text/javascript">   
+//获取Canvas对象(画布)   
+var canvas = document.getElementById("myCanvas");   
+//简单地检测当前浏览器是否支持Canvas对象，以免在一些不支持html5的浏览器中提示语法错误   
+if(canvas.getContext){     
+    //获取对应的CanvasRenderingContext2D对象(画笔)   
+    var ctx = canvas.getContext("2d");     
+       
+    //开始一个新的绘制路径   
+    ctx.beginPath();   
+    //设置线条颜色为蓝色
+	ctx.fillStyle="#fff214";   
+	
+    //设置路径起点坐标   
+    ctx.moveTo(125, 10);   
+    //绘制直线线段到坐标点(60, 50)   
+    ctx.lineTo(30, 80);   
+    //绘制直线线段到坐标点(60, 90)   
+    ctx.lineTo(150, 90);       
+    //先关闭绘制路径。注意，此时将会使用直线连接当前端点和起始端点。   
+    ctx.closePath();   
+    //最后，按照绘制路径画出直线   
+      ctx.fill(); 
+}   
+</script>
+</body>
+</html>
