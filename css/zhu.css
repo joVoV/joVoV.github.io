@@ -75,8 +75,7 @@ body{
 
 	padding-top: 156px;
 	padding-left: 135px;
-	background-image: url(../img/yy.png);
-	background-repeat: repeat-x;
+	
 	height:150px;
 	}
 .biaoti{
@@ -92,19 +91,19 @@ body{
 	}
 #nav ul{
 	margin:-30px;
-	padding-left: 70%;
+	padding-left: 62%;
 	
 	list-style-type: none;
 	}
 #nav li{
 	font-size: 20px;
-	width: 100px;
+	width: 120px;
 	height: 80px;
 	float: left;
 	}
 #nav .nav-s a {
 	color: #000;
-	margin-left: 20px;
+	margin-left: 30px;
 	display: inline;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -156,7 +155,7 @@ body{
 	text-decoration: none;
 	text-align:center;
 	color: #000;
-	text-shadow: 0 0 30px #fff214;
+
 	-webkit-transition: margin .4s ease-in-out;
 	-moz-transition: margin .4s ease-in-out;
 	-o-transition: margin .4s ease-in-out;
@@ -186,7 +185,7 @@ body{
 	}
 .example-link a:nth-of-type(even) {
 	
-	opacity:0.4;
+	opacity:0.8;
 	
 }
 
@@ -202,6 +201,11 @@ body{
 	-webkit-transform:scale(1.2, 1.2); /* Safari 和 Chrome */
 	-o-transform:scale(1.2, 1.2); 	/* Opera */
 }
+#example-show span a{
+	color: #000;
+	text-decoration: none;
+	
+	}
 #footer{
 	width:350px;
 	margin:0 auto;
