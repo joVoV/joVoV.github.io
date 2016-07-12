@@ -78,15 +78,14 @@ window.onmousewheel = document.onmousewheel = wheel;
         	<a href="#"><img src="img/you.png"></a>
         </div>
         <div id="top">
-        	<img src="img/me.png" width="80" height="40">
+        	<img src="img/ME.png" width="80" height="40">
         </div>
       </div>
 	<div id="head" style="height: 200px;overflow:hidden;">
 		<ul>
-        <li class="me"><img src="img/me.png"></li>
+        <li class="me"><img src="img/ME.png"></li>
         <div class="connect">
-        	<li><a href="#"><img src="img/email.png" width="50" height="50"> </a></li>
-        	<li><a href="#"><img src="img/git.png" width="50" height="50"></a> </li>
+       <li> 欢迎来到刘佳的个人网站！ Hi~ o(*￣▽￣*)ブ </li>
          </div>
        	</ul>
       
@@ -118,7 +117,7 @@ window.onmousewheel = document.onmousewheel = wheel;
         </div>
     </div>
     <div id="footer">
-                                Copyright (C) 2016 jo
+                                Copyright (C) 2016 jovov.github.io
     </div>
 </div>
 <script type="text/javascript"> 
@@ -127,27 +126,16 @@ window.onmousewheel = document.onmousewheel = wheel;
 --> 
 </script>
 <script type="text/javascript">   
-//获取Canvas对象(画布)   
+  
 var canvas = document.getElementById("myCanvas");   
-//简单地检测当前浏览器是否支持Canvas对象，以免在一些不支持html5的浏览器中提示语法错误   
-if(canvas.getContext){     
-    //获取对应的CanvasRenderingContext2D对象(画笔)   
-    var ctx = canvas.getContext("2d");     
-       
-    //开始一个新的绘制路径   
+if(canvas.getContext){        
+    var ctx = canvas.getContext("2d");        
     ctx.beginPath();   
-    //设置线条颜色为蓝色
-	ctx.fillStyle="#fff214";   
-	
-    //设置路径起点坐标   
-    ctx.moveTo(125, 10);   
-    //绘制直线线段到坐标点(60, 50)   
-    ctx.lineTo(30, 80);   
-    //绘制直线线段到坐标点(60, 90)   
-    ctx.lineTo(150, 90);       
-    //先关闭绘制路径。注意，此时将会使用直线连接当前端点和起始端点。   
-    ctx.closePath();   
-    //最后，按照绘制路径画出直线   
+	ctx.fillStyle="#fff214";      
+    ctx.moveTo(125, 10);      
+    ctx.lineTo(30, 80);          
+    ctx.lineTo(150, 90);          
+    ctx.closePath();     
       ctx.fill(); 
 }   
 </script>

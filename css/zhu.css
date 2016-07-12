@@ -24,6 +24,10 @@ body{
 	Writing-mode:tb-rl;
 	margin-top:15px;
 	margin-right:20px;
+	
+	-webkit-writing-mode: vertical-rl;      
+    writing-mode: vertical-rl;
+    *writing-mode: tb-rl;
 	}
 #left-bottom{
 
@@ -46,21 +50,23 @@ body{
 	}
 .me{
 	padding-top: 50px;
-	padding-left: 100px;	
+	padding-left: 0px;	
 	}
 #head ul{
 	list-style-type: none;
 	}
 
 #head li{
-	width: 80px;
+	width: 600px;
 	height: 80px;
 	float: left;
 	text-align: center;
 	}
 .connect{
 	padding-top: 80px;
-	padding-left: 70%;
+	padding-left: 50%;
+	font:黑体,微软雅黑,宋体;
+	font-size:24px;
 	}
 .connect li{
 	padding-left: 50px;
@@ -197,6 +203,7 @@ body{
 	-o-transform:scale(1.2, 1.2); 	/* Opera */
 }
 #footer{
-	width:200px;
+	width:350px;
 	margin:0 auto;
+	margin-bottom:10px;
 	}
