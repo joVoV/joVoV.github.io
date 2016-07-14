@@ -12,12 +12,17 @@ body{
 	left:48%;
 	}
 #left-top{
-
+	
 	position: fixed;
 	Writing-mode:lr-tb;
 	margin-top:15px;
 	margin-left:20px;
+	
 	}
+#left-top a{
+	color:#000;
+	text-decoration: none;
+}
 #right-top{
 
 	position: fixed;
@@ -91,7 +96,7 @@ body{
 	}
 #nav ul{
 	margin:-30px;
-	padding-left: 62%;
+	padding-left: 70%;
 	
 	list-style-type: none;
 	}
@@ -132,35 +137,35 @@ body{
 	opacity: 1;
 }
 #example{
-	width:1000px;
-
+	width:900px;
+	overflow:hidden;
 	margin:0 auto;
 	}
 #example-show{
 	height: 600px;
-	
+	width:800px;
 	font-size: 20px;
+	padding-left:10px;
 	}
+
 .example-link{
-	width:1000px;
-	height: 400px;
-	overflow:hidden;
+	width:800px;
+height: 400px;
 	}
 .example-link a{
 	display:block;
-	width:1000px;
+	width:600px;
 	height: 400px;
-	background:#fff;
 	font: lighter 2em/400px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-decoration: none;
 	text-align:center;
 	color: #000;
 
-	-webkit-transition: margin .4s ease-in-out;
-	-moz-transition: margin .4s ease-in-out;
-	-o-transition: margin .4s ease-in-out;
-	-ms-transition: margin .4s ease-in-out;
-	transition: margin .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all  .4s ease-in-out;
+	-o-transition: all  .4s ease-in-out;
+	-ms-transition: all  .4s ease-in-out;
+	transition: all  .4s ease-in-out;
 	
 	 transition-delay: 0s;
     transition-duration: 0.4s;
@@ -185,23 +190,28 @@ body{
 	}
 .example-link a:nth-of-type(even) {
 	
-	opacity:0.8;
-	
+	opacity:0.1;
+	position:relative;
+	height: 189px;
+	width:300px;
+	top:-300px;
+	left:900px;
 }
 
 .example-link:hover :nth-of-type(even) {
-	margin-top: -400px;
-	
+	margin-left: -300px;
+	opacity:0.8;
 }
 .example-link:hover :first-child {
-	transform: scale(1.2, 1.2);
+	transform: scale(0.9, 0.9);
 	
-	-ms-transform:scale(1.2, 1.2); 	/* IE 9 */
-	-moz-transform:scale(1.2, 1.2); 	/* Firefox */
-	-webkit-transform:scale(1.2, 1.2); /* Safari 和 Chrome */
-	-o-transform:scale(1.2, 1.2); 	/* Opera */
+	-ms-transform:scale(0.9, 0.9); 	/* IE 9 */
+	-moz-transform:scale(0.9, 0.9); 	/* Firefox */
+	-webkit-transform:scale(0.9, 0.9); /* Safari 和 Chrome */
+	-o-transform:scale(0.9, 0.9); 	/* Opera */
 }
 #example-show span a{
+
 	color: #000;
 	text-decoration: none;
 	
@@ -230,6 +240,7 @@ float:left;
 	top:-50px;
 	left:150px;
 }
+
 #right{
 font-size:20px;
 font-family:  宋体;
@@ -245,9 +256,9 @@ margin-top:200px;
 }
 #talk{
 clear:both;
-font-size:30px;
+font-size:40px;
 font-family:  黑体, 微软雅黑;
-font:bold;
+font-weight:300px;
 width:600px;
 height: 50px;
 
@@ -255,7 +266,7 @@ margin-left:65%;
 margin-top:150px;
 }
 #footer{
-clear:both;
+	clear:both;
 	width:350px;
 	margin:0 auto;
 	margin-bottom:10px;
