@@ -206,7 +206,56 @@ body{
 	text-decoration: none;
 	
 	}
+#aboutme{
+	width:1000px;
+	height: 600px;
+	margin:0 auto;
+	
+}
+#left{
+width:500px;
+float:left;
+}
+#left img{
+	 filter:alpha(opacity=80); 
+	 -moz-opacity:0.8;
+	 -khtml-opacity: 0.8;
+	 opacity: 0.8;
+}
+#line{
+	clear:both;
+	width:300px;
+	height: 25px;
+	position:relative;
+	top:-50px;
+	left:150px;
+}
+#right{
+font-size:20px;
+font-family:  宋体;
+width:500px;
+height:100px;
+float:right;
+margin-top:200px;
+}
+#me{
+	display:block;
+	width:400px;
+	height: 300px;
+}
+#talk{
+clear:both;
+font-size:30px;
+font-family:  黑体, 微软雅黑;
+font:bold;
+width:600px;
+height: 50px;
+
+margin-left:65%;
+margin-top:150px;
+}
 #footer{
+clear:both;
 	width:350px;
 	margin:0 auto;
 	margin-bottom:10px;
